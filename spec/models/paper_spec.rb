@@ -1,5 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe Paper, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe "Paper Model", type: :model do
+
+  it "should require title to be not empty" do
+    @paper = FactoryBot.create :paper, title: ""
+    expect(@paper).to_not be_valid
+  end
 end

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Edit Author Page" do
+describe "Edit Author Page", type: :feature do
 
   it "should render without errors" do
     @author = FactoryBot.create :author
